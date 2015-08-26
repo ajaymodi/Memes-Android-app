@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent" 
+   
+>
+
+    
+       <com.funmeme.jobaka.TouchImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+     	android:layout_above="@+id/vDivider"
+        
+         />
+    
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+     <View
+         android:id="@+id/vDivider" 
+         android:layout_above="@+id/linearLayout1"
+         android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="10dp" />
+<LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:orientation="horizontal" >
+
+    <TextView
+      android:id="@+id/downloads"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:layout_weight="0.15"
+      android:textSize="20sp"
+      android:layout_marginLeft="20dp"
+      android:text="Downloads" />
+
+    <ImageView
+        android:id="@+id/imageViewdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_action_download" />
+
+    <ImageView
+        android:id="@+id/imageViewshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/icon_whatsapp" />
+
+
+    <ImageView
+        android:id="@+id/imageViewfav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_action_favorite" />
+
+    <TextView
+        android:id="@+id/Fav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="Favs"/>
+    </LinearLayout>
+
+</RelativeLayout>
